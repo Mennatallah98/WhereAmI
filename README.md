@@ -2,8 +2,6 @@
 
 https://github.com/Mennatallah98/WhereAmI/assets/45118345/c7e48ad5-578f-4467-983c-c31747558c1f
 
-
-
 ## Overview
 
 This is a template: replace, remove, and add where required. Describe here what this package does and what it's meant for in a few sentences.
@@ -183,6 +181,55 @@ Reads temperature measurements and computed the average.
 ### NODE_B_NAME
 
 ...
+
+## Structure
+
+	└── WhereAmI
+	    ├── my_robot
+	    │   ├── CMakeLists.txt
+	    │   ├── config
+	    │   │   ├── base_local_planner_params.yaml
+	    │   │   ├── costmap_common_params.yaml
+	    │   │   ├── global_costmap_params.yaml
+	    │   │   ├── local_costmap_params.yaml
+	    │   │   └── __MACOSX
+	    │   ├── launch
+	    │   │   ├── amcl.launch
+	    │   │   ├── robot_description.launch
+	    │   │   └── world.launch
+	    │   ├── maps
+	    │   │   ├── map.pgm
+	    │   │   └── map.yaml
+	    │   ├── meshes
+	    │   │   └── hokuyo.dae
+	    │   ├── package.xml
+	    │   ├── rviz
+	    │   │   └── myworld.rviz
+	    │   ├── urdf
+	    │   │   ├── my_robot.gazebo
+	    │   │   └── my_robot.xacro
+	    │   └── worlds
+	    │       └── myworld.world
+	    └── pgm_map_creator
+		├── CMakeLists.txt
+		├── launch
+		│   └── request_publisher.launch
+		├── LICENSE
+		├── maps
+		├── msgs
+		│   ├── CMakeLists.txt
+		│   └── collision_map_request.proto
+		├── package.xml
+		├── README.md
+		├── src
+		│   ├── collision_map_creator.cc
+		│   └── request_publisher.cc
+		└── world
+		    ├── myworld.world
+		    └── udacity_mtv
+
+
+
 
 
 ## Bugs & Feature Requests
