@@ -69,7 +69,7 @@ Config file folder/config
 * 
 * **global_costmap_params.yaml:** contains the parameters for [global] [costmap].
 * 
-* **local_costmap_params.yaml:** contains the parameters for [base_local_planner] which is  responsible for computing velocity commands to send to the mobile base 
+* **local_costmap_params.yaml:** contains the parameters for [local] [costmap].
 
 ## Launch files
 
