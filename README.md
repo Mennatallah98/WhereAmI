@@ -58,6 +58,24 @@ In another window
 Run navigation stack with the modified configuration file
 
 	roslaunch my_robot amcl.launch
+	
+### To map the world
+
+For [pgm_map_creator] which has been modified to work with Ubuntu18
+
+	sudo apt-get install libignition-math2-dev protobuf-compiler
+	cp <YOUR GAZEBO WORLD FILE> src/pgm_map_creator/world/<YOUR GAZEBO WORLD FILE>
+	
+Inside the world file
+	
+	<plugin filename="libcollision_map_creator.so" name="collision_map_creator"/>
+	
+To map the world
+
+	gzserver --verbose src/pgm_map_creator/world/<YOUR GAZEBO WORLD FILE>
+	roslaunch pgm_map_creator request_publisher.launch
+	
+create yaml file simlar to that exsitant in the repistory with measurements based on your world
 
 ## Config files
 
@@ -73,7 +91,11 @@ Config file folder/config
 
 ## Launch files
 
-* **launch_file_1.launch:** shortly explain what is launched (e.g standard simulation, simulation with gdb,...)
+* **robot_description.launch:** Runs the robot file and starts the joint publisher robot state publisher.
+
+* **world.launch:** Starts rviz customized configuration and gazebo with the customized world , spawns the robot and launches robot_description.
+
+* **amcl.launch:** shortly explain what is launched (e.g standard simulation, simulation with gdb,...)
 
      Argument set 1
 
