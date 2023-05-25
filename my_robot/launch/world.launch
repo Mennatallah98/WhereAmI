@@ -34,7 +34,7 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/mennatallah/nanodegree_ws/project_3/src/my_robot/rviz/myworld.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/rviz/myworld.rviz"/>
 
 
 </launch>
