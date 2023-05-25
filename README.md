@@ -50,11 +50,17 @@ Source the workspace by adding this line .bashrc
 
 ## Usage
 
-Describe the quickest way to run this software, for example:
+In a new terminal
 
-Run the main node with
+Open the world the world in gazebo and rviz with the rbot included
 
-	roslaunch ros_package_template ros_package_template.launch
+	roslaunch my_robot world.launch
+
+In another window
+
+Run navigation stack with the modified configuration file
+
+	roslaunch my_robot amcl.launch
 
 ## Config files
 
