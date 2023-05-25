@@ -187,5 +187,5 @@ Please report bugs and request features using the [Issue Tracker](https://github
 [ROS]: http://www.ros.org
 [rviz]: http://wiki.ros.org/rviz
 [Eigen]: http://eigen.tuxfamily.org
-[amcl]: (http://wiki.ros.org/amcl)
-[pgm_map_creator]: (https://github.com/udacity/pgm_map_creator.git)
+[amcl]: http://wiki.ros.org/amcl
+[pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
