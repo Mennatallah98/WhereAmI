@@ -6,14 +6,14 @@ https://github.com/Mennatallah98/WhereAmI/assets/45118345/c7e48ad5-578f-4467-983
 
 ## Overview
 
-This project is the third project in Udacity Robotics Software Engineer nano degree where the world was mapped using pgm_map_creator and the robot navigated the world using navigation stack
+This project is the third project in Udacity Robotics Software Engineer nano degree where the world was mapped using [pgm_map_creator] and the robot navigated the world using navigation stack where [amcl] was used for localization
 
 **Keywords:** ROS, amcl, navigation_stack, mapping, localization.
 
 
 
 **Author: Mennatallah Aly<br />**
-
+)
 
 The WhereAmI package has been tested under [ROS] Melodic on Ubuntu 18.04. and Gazebo 9.0.0
 
@@ -187,5 +187,5 @@ Please report bugs and request features using the [Issue Tracker](https://github
 [ROS]: http://www.ros.org
 [rviz]: http://wiki.ros.org/rviz
 [Eigen]: http://eigen.tuxfamily.org
-[std_srvs/Trigger]: http://docs.ros.org/api/std_srvs/html/srv/Trigger.html
-[sensor_msgs/Temperature]: http://docs.ros.org/api/sensor_msgs/html/msg/Temperature.html
+[amcl](http://wiki.ros.org/amcl)
+[pgm_map_creator](https://github.com/udacity/pgm_map_creator.git)
