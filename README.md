@@ -181,6 +181,6 @@ Reads temperature measurements and computed the average.
 [navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
 [base_local_planner]: http://wiki.ros.org/base_local_planner
 [costmap]: http://wiki.ros.org/costmap_2d
-[global]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration
-[local]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Local_Configuration
-[common]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Common_Configuration
+[global]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration:~:text=Global%20Configuration%20(global_costmap)
+[local]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Local_Configuration:~:text=Local%20Configuration%20(local_costmap)
+[common]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration:~:text=Common%20Configuration%20(local_costmap)%20%26%20(global_costmap)
