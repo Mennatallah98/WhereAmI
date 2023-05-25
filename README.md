@@ -6,11 +6,9 @@ https://github.com/Mennatallah98/WhereAmI/assets/45118345/c7e48ad5-578f-4467-983
 
 ## Overview
 
-This project is the third project in Udacity Robotics Software Engineer nano degree where the world was mapped using [pgm_map_creator] and the robot navigated the world using navigation stack where [amcl] was used for localization
+This project is the third project in Udacity Robotics Software Engineer nano degree where the world was mapped using [pgm_map_creator] and the robot navigated the world using [navigation_stack] where [amcl] was used for localization.
 
 **Keywords:** ROS, amcl, navigation_stack, mapping, localization.
-
-
 
 **Author: Mennatallah Aly<br />**
 )
@@ -189,3 +187,4 @@ Please report bugs and request features using the [Issue Tracker](https://github
 [Eigen]: http://eigen.tuxfamily.org
 [amcl]: http://wiki.ros.org/amcl
 [pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
+[navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
