@@ -95,60 +95,14 @@ Config file folder/config
 
 * **world.launch:** Starts rviz customized configuration and gazebo with the customized world , spawns the robot and launches robot_description.
 
-* **amcl.launch:** shortly explain what is launched (e.g standard simulation, simulation with gdb,...)
+* **amcl.launch:** Runs amcl, move_base, and map_server and sets the initial position of the robot in the map.
 
-     Argument set 1
+## Packages
 
-     - **`argument_1`** Short description (e.g. as commented in launch file). Default: `default_value`.
+* **my_robot:** Contains the URDF of r 4-wheeled under the name of my_robot with the attached sensors in addition to the world with robot embbeded in aldo the modified configuartion files and the world map.
 
-    Argument set 2
+* **[pgm_map_creator]** Draws a map for the Gazebo world.
 
-    - **`...`**
-
-* **...**
-
-## Nodes
-
-### ros_package_template
-
-Reads temperature measurements and computed the average.
-
-
-#### Subscribed Topics
-
-* **`/temperature`** ([sensor_msgs/Temperature])
-
-	The temperature measurements from which the average is computed.
-
-
-#### Published Topics
-
-...
-
-
-#### Services
-
-* **`get_average`** ([std_srvs/Trigger])
-
-	Returns information about the current average. For example, you can trigger the computation from the console with
-
-		rosservice call /ros_package_template/get_average
-
-
-#### Parameters
-
-* **`subscriber_topic`** (string, default: "/temperature")
-
-	The name of the input topic.
-
-* **`cache_size`** (int, default: 200, min: 0, max: 1000)
-
-	The size of the cache.
-
-
-### NODE_B_NAME
-
-...
 
 ## Structure
 
