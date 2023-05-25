@@ -63,8 +63,13 @@ Run navigation stack with the modified configuration file
 
 Config file folder/config
 
-* **base_local_planner_params.yaml:** contains the parameters for [base_local_planner] which is  responsible for computing velocity commands to send to the mobile base 
-
+* **base_local_planner_params.yaml:** contains the parameters for [base_local_planner] which is  responsible for computing velocity commands to send to the mobile base. 
+* 
+* **costmap_common_params.yaml:** contains the [common] parameters between the global and local [costmap].
+* 
+* **global_costmap_params.yaml:** contains the parameters for [global]_[cost_map]
+* 
+* **local_costmap_params.yaml:** contains the parameters for [base_local_planner] which is  responsible for computing velocity commands to send to the mobile base 
 
 ## Launch files
 
@@ -171,9 +176,11 @@ Reads temperature measurements and computed the average.
 
 
 [ROS]: http://www.ros.org
-[rviz]: http://wiki.ros.org/rviz
-[Eigen]: http://eigen.tuxfamily.org
 [amcl]: http://wiki.ros.org/amcl
 [pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
 [navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
 [base_local_planner]: http://wiki.ros.org/base_local_planner
+[costmap]: http://wiki.ros.org/costmap_2d
+[global]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration
+[local]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Local_Configuration
+[common]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Common_Configuration
