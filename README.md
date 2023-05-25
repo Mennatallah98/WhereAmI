@@ -61,13 +61,10 @@ Run navigation stack with the modified configuration file
 
 ## Config files
 
-Config file folder/set 1
+Config file folder/config
 
-* **config_file_1.yaml** Shortly explain the content of this config file
+* **base_local_planner_params.yaml:** contains the parameters for [base_local_planner] which is  responsible for computing velocity commands to send to the mobile base 
 
-Config file folder/set 2
-
-* **...**
 
 ## Launch files
 
@@ -173,17 +170,10 @@ Reads temperature measurements and computed the average.
 		    └── udacity_mtv
 
 
-
-
-
-## Bugs & Feature Requests
-
-Please report bugs and request features using the [Issue Tracker](https://github.com/ethz-asl/ros_best_practices/issues).
-
-
 [ROS]: http://www.ros.org
 [rviz]: http://wiki.ros.org/rviz
 [Eigen]: http://eigen.tuxfamily.org
 [amcl]: http://wiki.ros.org/amcl
 [pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
 [navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
+[base_loacl_planner]: http://wiki.ros.org/base_local_planner
