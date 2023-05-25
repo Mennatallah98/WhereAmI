@@ -125,47 +125,47 @@ Reads temperature measurements and computed the average.
 
 ## Structure
 
-	└── WhereAmI
-	    ├── my_robot
-	    │   ├── CMakeLists.txt
-	    │   ├── config
-	    │   │   ├── base_local_planner_params.yaml
+	└── WhereAmI                                                # Where Am I Project
+	    ├── my_robot                                                               
+	    │   ├── CMakeLists.txt                                  # compiler instructions
+	    │   ├── config                                          # config folder for configuration files 
+	    │   │   ├── base_local_planner_params.yaml         
 	    │   │   ├── costmap_common_params.yaml
 	    │   │   ├── global_costmap_params.yaml
 	    │   │   ├── local_costmap_params.yaml
 	    │   │   └── __MACOSX
-	    │   ├── launch
+	    │   ├── launch                                         # launch folder for launch files  
 	    │   │   ├── amcl.launch
 	    │   │   ├── robot_description.launch
 	    │   │   └── world.launch
-	    │   ├── maps
+	    │   ├── maps                                           # maps folder for maps
 	    │   │   ├── map.pgm
 	    │   │   └── map.yaml
-	    │   ├── meshes
+	    │   ├── meshes                                         # meshes folder for sensors
 	    │   │   └── hokuyo.dae
-	    │   ├── package.xml
-	    │   ├── rviz
+	    │   ├── package.xml                                    # package info
+	    │   ├── rviz                                           # rviz folder for rviz configuration files
 	    │   │   └── myworld.rviz
-	    │   ├── urdf
+	    │   ├── urdf                                           # urdf folder for xarco files
 	    │   │   ├── my_robot.gazebo
 	    │   │   └── my_robot.xacro
-	    │   └── worlds
+	    │   └── worlds                                         # world folder for world files
 	    │       └── myworld.world
-	    └── pgm_map_creator
-		├── CMakeLists.txt
-		├── launch
+	    └── pgm_map_creator                                    # pgm_map_creator 
+		├── CMakeLists.txt                                 # compiler instructions
+		├── launch                                         # launch folder for launch files 
 		│   └── request_publisher.launch
-		├── LICENSE
-		├── maps
-		├── msgs
+		├── LICENSE                                        # License for repository
+		├── maps                                           # maps folder for generated maps
+		├── msgs                                           # msgs folder for communication files
 		│   ├── CMakeLists.txt
 		│   └── collision_map_request.proto
-		├── package.xml
-		├── README.md
-		├── src
-		│   ├── collision_map_creator.cc
+		├── package.xml                                    # package info
+		├── README.md                                      # README for documentation
+		├── src                                            # src folder for main function
+		│   ├── collision_map_creator.cc               
 		│   └── request_publisher.cc
-		└── world
+		└── world                                          # world folder for world files
 		    ├── myworld.world
 		    └── udacity_mtv
 
