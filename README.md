@@ -176,4 +176,4 @@ Reads temperature measurements and computed the average.
 [amcl]: http://wiki.ros.org/amcl
 [pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
 [navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
-[base_loacl_planner]: http://wiki.ros.org/base_local_planner
+[base_local_planner]: http://wiki.ros.org/base_local_planner
