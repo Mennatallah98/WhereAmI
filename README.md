@@ -11,7 +11,6 @@ This project is the third project in Udacity Robotics Software Engineer nano deg
 **Keywords:** ROS, amcl, navigation_stack, mapping, localization.
 
 **Author: Mennatallah Aly<br />**
-)
 
 The WhereAmI package has been tested under [ROS] Melodic on Ubuntu 18.04. and Gazebo 9.0.0
 
