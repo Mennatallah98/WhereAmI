@@ -6,43 +6,16 @@ https://github.com/Mennatallah98/WhereAmI/assets/45118345/c7e48ad5-578f-4467-983
 
 ## Overview
 
-This is a template: replace, remove, and add where required. Describe here what this package does and what it's meant for in a few sentences.
+This project is the third project in Udacity Robotics Software Engineer nano degree where the world was mapped using pgm_map_creator and the robot navigated the world using navigation stack
 
-**Keywords:** example, package, template
-
-Or, add some keywords to the Bitbucket or GitHub repository.
-
-### License
-
-The source code is released under a [BSD 3-Clause license](ros_package_template/LICENSE).
-
-**Author: Péter Fankhauser<br />
-Affiliation: [ANYbotics](https://www.anybotics.com/)<br />
-Maintainer: Péter Fankhauser, pfankhauser@anybotics.com**
-
-The PACKAGE NAME package has been tested under [ROS] Indigo, Melodic and Noetic on respectively Ubuntu 14.04, 18.04 and 20.04.
-This is research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
-
-[![Build Status](http://rsl-ci.ethz.ch/buildStatus/icon?job=ros_best_practices)](http://rsl-ci.ethz.ch/job/ros_best_practices/)
+**Keywords:** ROS, amcl, navigation_stack, mapping, localization.
 
 
-![Example image](doc/example.jpg)
+
+**Author: Mennatallah Aly<br />**
 
 
-### Publications
-
-If you use this work in an academic context, please cite the following publication(s):
-
-* P. Fankhauser, M. Bloesch, C. Gehring, M. Hutter, and R. Siegwart: **PAPER TITLE**. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2015. ([PDF](http://dx.doi.org/10.3929/ethz-a-010173654))
-
-        @inproceedings{Fankhauser2015,
-            author = {Fankhauser, P\'{e}ter and Hutter, Marco},
-            booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-            title = {{PAPER TITLE}},
-            publisher = {IEEE},
-            year = {2015}
-        }
-
+The WhereAmI package has been tested under [ROS] Melodic on Ubuntu 18.04. and Gazebo 9.0.0
 
 ## Installation
 
@@ -50,64 +23,30 @@ If you use this work in an academic context, please cite the following publicati
 
 To install all packages from the this repository as Debian packages use
 
-    sudo apt-get install ros-noetic-...
+    sudo apt-get update && sudo apt-get upgrade -y
+    sudo apt-get install ros-melodic-navigation
+    sudo apt-get install ros-melodic-map-server
+    sudo apt-get install ros-melodic-move-base
+    sudo apt-get install ros-melodic-amcl
     
 Or better, use `rosdep`:
 
 	sudo rosdep install --from-paths src
 
-### Building from Source
-
-#### Dependencies
-
-- [Robot Operating System (ROS)](http://wiki.ros.org) (middleware for robotics),
-- [Eigen] (linear algebra library)
-
-	sudo rosdep install --from-paths src
-
-#### Building
+## Building from Source
 
 To build from source, clone the latest version from this repository into your catkin workspace and compile the package using
 
-	cd catkin_workspace/src
-	git clone https://github.com/ethz-asl/ros_best_practices.git
+	cd catkin_ws/src
+	sudo apt update
+	git clone https://github.com/Mennatallah98/WhereAmI.git
 	cd ../
 	rosdep install --from-paths . --ignore-src
 	catkin_make
-
-### Running in Docker
-
-Docker is a great way to run an application with all dependencies and libraries bundles together. 
-Make sure to [install Docker](https://docs.docker.com/get-docker/) first. 
-
-First, spin up a simple container:
-
-	docker run -ti --rm --name ros-container ros:noetic bash
 	
-This downloads the `ros:noetic` image from the Docker Hub, indicates that it requires an interactive terminal (`-t, -i`), gives it a name (`--name`), removes it after you exit the container (`--rm`) and runs a command (`bash`).
+Source the workspace by adding this line .bashrc
 
-Now, create a catkin workspace, clone the package, build it, done!
-
-	apt-get update && apt-get install -y git
-	mkdir -p /ws/src && cd /ws/src
-	git clone https://github.com/leggedrobotics/ros_best_practices.git
-	cd ..
-	rosdep install --from-path src
-	catkin_make
-	source devel/setup.bash
-	roslaunch ros_package_template ros_package_template.launch
-
-### Unit Tests
-
-Run the unit tests with
-
-	catkin_make run_tests_ros_package_template
-
-### Static code analysis
-
-Run the static code analysis with
-
-	catkin_make roslint_ros_package_template
+	source ~/catkin_ws/devel/setup.bash
 
 ## Usage
 
