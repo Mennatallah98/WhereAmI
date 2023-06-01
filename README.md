@@ -93,9 +93,9 @@ Config file folder/config
 
 * **robot_description.launch:** Runs the robot file and starts the joint publisher robot state publisher.
 
-* **world.launch:** Starts rviz customized configuration and gazebo with the customized world , spawns the robot and launches robot_description.
+* **world.launch:** Starts [rviz] customized configuration and gazebo with the customized world , spawns the robot and launches robot_description.
 
-* **amcl.launch:** Runs amcl, move_base, and map_server and sets the initial position of the robot in the map.
+* **amcl.launch:** Runs [amcl], [move_base], and [map_server] and sets the initial position of the robot in the map.
 
 ## Packages
 
@@ -153,6 +153,7 @@ Config file folder/config
 
 [ROS]: http://www.ros.org
 [amcl]: http://wiki.ros.org/amcl
+[rviz]: http://wiki.ros.org/rviz
 [pgm_map_creator]: https://github.com/udacity/pgm_map_creator.git
 [navigation_stack]: http://wiki.ros.org/navigation/Tutorials/RobotSetup
 [base_local_planner]: http://wiki.ros.org/base_local_planner
@@ -160,3 +161,5 @@ Config file folder/config
 [global]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration:~:text=Global%20Configuration%20(global_costmap)
 [local]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Local_Configuration:~:text=Local%20Configuration%20(local_costmap)
 [common]: http://wiki.ros.org/navigation/Tutorials/RobotSetup#Global_Configuration:~:text=Common%20Configuration%20(local_costmap)%20%26%20(global_costmap)
+[move_base]: http://wiki.ros.org/move_base
+[map_server]: http://wiki.ros.org/map_server
