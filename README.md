@@ -101,7 +101,7 @@ Config file folder/config
 
 * **my_robot:** Contains the URDF of r 4-wheeled under the name of my_robot with the attached sensors in addition to the world with robot embbeded in aldo the modified configuartion files and the world map.
 
-* **[pgm_map_creator]:** Draws a map for the Gazebo world.
+* **[pgm_map_creator]:** Generates a map for the Gazebo world.
 
 
 ## Structure
